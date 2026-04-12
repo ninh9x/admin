@@ -1,0 +1,241 @@
+/* Ngất Ngây 🐷 */
+
+* {
+    word-wrap: break-word;
+    box-sizing: border-box;
+} 
+body {
+    font-family: Bauhaus;
+    color: #9966FF;
+    font-size: 16px;
+    margin: 0;
+    margin: auto;
+    padding: 0;
+    max-width: 768px;
+    border: 1px solid #e1e1e1;
+    margin-top: 1px;
+    background-color: #d3d3d3;
+    margin-bottom: 50px;
+}
+
+#button {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.code a {
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version  */
+    pointer-events: none; /* Non-click */
+}
+
+.title {
+    background: gray;
+    border-bottom: 2px solid #cbcbcb;
+    color: #fff;
+    margin: 0 0 1px 0;
+    padding: 4px 1px 4px 6px;
+    font-size: 15px;
+}
+
+.list {
+    background: #FFF;
+    margin: 1px 0;
+    padding: 3px 1px 4px 4px;
+    border: 1px solid #e1e1e1;
+}
+
+.edit {
+    font-size: 14px;
+    border: 1px solid #ab0;
+    margin: 1px;
+    padding: 0px;
+}
+
+.ch {
+    background: #E1E9EA;
+    margin: 1px 0;
+    padding: 3px 4px 3px 4px;
+}
+
+.border, .rb {
+    font-size: 15px;
+    border: 1px solid #ab0;
+    margin: 1px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #4b76d3;
+}
+
+a:hover {   
+    font-weight: bold;
+    text-decoration: none;
+    color: #00a;
+}
+
+input, textarea, select {
+    font-size: 15px;
+    background: #e0e0e0;
+    margin: 1px 0;
+    padding: 3px 1px 4px 4px;
+    color: black;
+    border: 1px solid #4b76d3;
+}
+
+input[type="submit"], input[type="button"], input[type="reset"] {
+    background: gray;
+    padding: 4px 10px;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 2px;
+    border: 1px solid #4b76d3;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+    background: #55928c;
+    padding: 4px 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+input[type="file"] {
+    margin: 2px 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* The tablet with borders */
+.tablet {
+  position: relative;
+  width: 768px;
+  height: 1024px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+.tablet:before, .tablet:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #333;
+}
+.tablet:before {
+  width: 60px;
+  height: 5px;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.tablet:after {
+  width: 35px;
+  height: 35px;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.tablet .content {
+  width: 768px;
+  height: 1024px;
+  background: white;
+  margin: -1px;
+}
+/* The laptop with borders */
+.laptop {
+  transform-origin: 0 0;
+  transform: scale(.6) translate(-50%);
+  left: 50%;
+  position: absolute;
+  width: 1366px;
+  height: 800px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: black;
+  border-width: 24px 24px 80px;
+  background-color: black;
+}
+.laptop:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1600px;
+  height: 60px;
+  margin: 80px 0 0 -110px;
+  background: black;
+  border-radius: 6px;
+}
+.laptop:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  bottom: -110px;
+  left: 50%;
+  transform: translate(-50%);
+  background: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 1;
+}
+.laptop .content {
+  width: 1366px;
+  height: 800px;
+  overflow: hidden;
+  border: none;
+}
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+.smartphone:before, .smartphone:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #333;
+}
+.smartphone:before {
+  width: 60px;
+  height: 5px;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.smartphone:after {
+  width: 35px;
+  height: 35px;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
